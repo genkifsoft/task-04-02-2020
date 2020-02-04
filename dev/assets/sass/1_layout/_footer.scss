@@ -1,0 +1,52 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer{
+    padding: 57px 0 68px;
+    margin: 0 70px 0 70px;
+    background-color: #e9edf0;
+    @include breakpoint(sp){
+        margin: 0 30px 0 30px;
+    }
+    &__inner{
+        ul{
+            position: relative!important;
+            display: flex;
+            >li:first-child{
+                margin-right: 10px;
+            }
+            >li:last-child{
+                position: absolute!important;
+                right: 0px;
+                top: -6px;
+                @include breakpoint(sp){
+                    position: inherit!important;
+                }
+            }
+            li:nth-child(2){
+                padding-right: 20px;
+                margin-top: -5px;
+            }
+            li:nth-child(3){
+                padding-right: 17px;
+                margin-top: -5px;
+            }
+            li:nth-child(4){
+                padding-right: 12px;
+                margin-top: -5px;
+                @include breakpoint(sp){
+                    padding-bottom: 30px;
+                }
+            }
+            @include breakpoint(sp){
+                display: block;
+                text-align: center;
+            }
+            @include breakpoint(sp){
+                li{
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

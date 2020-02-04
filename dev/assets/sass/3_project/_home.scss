@@ -1,0 +1,130 @@
+.p-home{
+    .p-home1{
+        margin: 0 70px -7px 70px;
+        @include breakpoint(sp){
+            margin: 0 30px 0 30px;
+        }
+        background-image: url("../img/background-about.png");
+        background-repeat: no-repeat;
+        .c-about{
+            border: 10px solid #ffffff;
+            margin-top: 36px;
+            display: block;
+            @include breakpoint(sp){
+                margin: 0 30px 0 30px;
+            }
+            &__tilte{
+                text-align: center;
+                margin: 60px 0px 50px 0px;
+                @include breakpoint(sp){
+                    margin: 30px 0px 0px 0px;
+                }
+            }
+            &__btn{
+                margin: 40px 0 60px;
+                @include breakpoint(sp){
+                    margin: 0px 0 40px;
+                }
+            }
+            &__content{
+                @include breakpoint(sp){
+                    padding: 30px;
+                }
+                margin-left: -4px;
+            }
+        }
+    }
+    .p-home2{
+        .l-container{
+            padding-top: 7px;
+        }
+        @include breakpoint(sp){
+            margin: 0 30px 0 30px;
+        }
+        margin: 0 70px 0 70px;
+        background-color: #e9edf0;
+        .c-news{
+            margin-bottom: 20px;
+            &__title{
+                margin: 59px 0 67px;
+            }
+            &__line{
+                margin-top: -12px;
+            }
+            &__item{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+            }
+            &__date{
+                background-color: #ffffff;
+                padding: 10px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                padding: 13px 13px 11px;
+            }
+            &__content{
+                background-color: #ffffff;
+                padding: 15px 15px 20px;
+            }
+            @include breakpoint(sp){
+                .c-list{
+                    flex-wrap: wrap;
+                    .c-list__card{
+                        width: 100%;
+                        padding: 15px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .p-home3{
+        padding: 30px 0 109px;
+        margin: 0 70px 0 70px;
+        @include breakpoint(sp){
+            margin: 0 30px 0 30px;
+        }
+        background-color: #fff;
+        .c-gallery{ 
+            &__title{
+                margin-bottom: 68px;
+            }           
+            &__item{
+                position: relative;
+                img{
+                    @include breakpoint(sp){
+                        width: 100%;
+                        padding: 15px;
+                    }
+                }
+            }
+            &__date{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &__line{
+                margin-top: -13px;
+            }
+            &__date{
+                padding: 43px;
+            }
+            .c-title{
+                margin-top: 87px;
+            }
+        }
+        @include breakpoint(sp){
+            .c-list{
+                width: 100%;
+                flex-wrap: wrap;
+                display: block;
+                &__card{
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+} 

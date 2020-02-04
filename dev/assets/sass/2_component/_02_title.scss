@@ -1,0 +1,30 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title{
+    position: relative;
+}
+.c-title:before{
+    content: "";
+    display: inline-block;
+    height: 9px;
+    width: 30%;
+    position: absolute;
+    left: 0px;
+    background-image: url("../img/line-news.png");;
+    background-repeat: no-repeat;
+}
+.c-title:after{
+    content: "";
+    height: 9px;
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    display: inline-block;
+    background-image: url("../img/line-news.png");;
+    background-repeat: no-repeat;
+}
